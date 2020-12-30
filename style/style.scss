@@ -1,0 +1,277 @@
+// Some Font
+// font-family: 'Quantico', sans-serif;
+// font-family: 'Signika', sans-serif;
+// font-family: 'Source Code Pro', monospace;
+
+$fontQuantico : 'Quantico', sans-serif;
+$fontSignika : 'Signika', sans-serif;
+$fontCode : 'Source Code Pro', monospace;
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#loader {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    marquee{
+        font-size: 24vh;
+        font-weight: 900;
+        font-style: italic;
+        color: rgb(20, 20, 20);
+        font-family: $fontQuantico;
+        line-height: 1em;
+    }
+
+    #intro{
+        position: absolute;
+        top: 43%;
+        left: 15%;
+
+        .intro-title{
+            font-size: 6vw;
+            letter-spacing: 1vmin;
+            color: white;
+            font-weight: 300;
+            font-family: $fontSignika;
+            font-weight: 900;
+        }
+    }
+}
+
+#home{
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 100vh;
+    color: rgb(43, 43, 43);
+    display: flex;
+    #container-2{
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+        height: 85%;
+        // background-color: black;
+        display: flex;
+        flex-direction: column;
+
+        #top-nav{
+            // background-color: black;
+            height: 10%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            .left{
+                grid-column: 1;
+                font-size: 2.5vw;
+                font-weight: 900;
+
+                // background-color: green;
+                
+            }
+            .center{
+                grid-column: 2;
+                text-align: center;
+                font-size: 1.8vw;
+                // background-color: red;
+            }
+            .right{
+                grid-column: 3;
+                text-align: right;
+                font-size: 3vw;
+                // background-color: rebeccapurple;
+            }
+        }
+
+        #content-2{
+            // background-color: blue;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 5% auto 5%;
+            grid-template-rows: 100%;
+
+            #social{
+                // background-color: red;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                color: rgb(80, 80, 80);
+                align-items: center;
+                font-size: 2rem;
+                #social-container{
+                    align-items: center;
+                    height: 60%;
+                    // background-color: rebeccapurple;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+
+            #content-container{
+                // background-color: blueviolet;
+                height: 80vh;
+                
+                #hero-container{
+                    // background-color: red;
+                    position: relative;
+                    width: 100%;
+                    height: 75vh;
+
+                    #border-image{
+                        // background-color: red;
+                        border: .2rem solid black;
+                        position: absolute;
+                        border-radius: 10%;
+                        border-top-left-radius: 0%;
+                        width: 34vmin;
+                        height: 59vmin;
+                        transform: translate(29vw,8.5vh);
+                        box-shadow: 0px 0px 10px black;
+
+                        &::before{
+                            content: '';
+                            // background-color: yellow;
+                            width: 25vw;
+                            height: 100px;
+                            border-top: .2rem solid black;
+                            z-index: 100;
+                            position: absolute;
+                            transform: translate(-25vw,1vw);
+                        }
+                    }
+                    
+                    .image-hero-container{
+                        position: absolute;
+                        // background-color: blanchedalmond;
+                        width: 35vmin;
+                        height: 60vmin;
+                        transform: translate(30vw,10vh);
+                        z-index: 1;
+                        overflow: hidden;
+                        border-bottom-right-radius: 3rem;
+
+                        h1{
+                            color: transparent;
+                            font-size: 5vw;
+                            letter-spacing: .3vmax;
+                            position: absolute;
+                            z-index: 2;
+                            -webkit-text-stroke: 1px white;
+                            white-space: nowrap;
+                            font-family: $fontQuantico;
+                        }
+                        .line1{
+                            // color: white;
+                            transform: translate(-25vw,-15vh);
+                            font-size: 10vw;
+                            letter-spacing: .1vw;
+                            // -webkit-text-stroke: 1px red;
+                            text-shadow: 0 0 30vw white;
+                        }
+                        .line2{
+                            // color: white;
+                            font-size: 5vw;
+                            letter-spacing: -.4vw;
+                            transform: translate(20vw,17vh);
+                        }
+                        .line3{
+                            // color: white;
+                            font-family: $fontSignika;
+                            font-size: 8vw;
+                            letter-spacing: .3vw;
+                            transform: translate(1vw,27vh);
+                            -webkit-text-stroke: 1px red;
+                            text-shadow: 0 0 10vw red;
+
+                        }
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit:cover;
+                            // border-radius: 4rem;
+                            &::after{
+                                content: '';
+                                background-color: white;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 100;
+                            }
+                        }
+                    }
+                    #outer{
+                        overflow: visible;
+                        z-index: 0;
+                        h1{
+                            color: black;
+                            -webkit-text-stroke: transparent;
+                            text-shadow: 0 0 3rem white;
+                        }
+                        .line1{
+                            transform: translate(-25vw,-15vh);
+                            font-size: 10vw;
+                            letter-spacing: .1vw;
+                        }
+                        .line2{
+                            font-size: 5vw;
+                            letter-spacing: -.4vw;
+                            transform: translate(20vw,17vh);
+                        }
+                        .line3{
+                            font-family: $fontSignika;
+                            font-size: 8vw;
+                            letter-spacing: .3vw;
+                            transform: translate(1vw,27vh);
+                        }
+                    }
+                }
+                
+            }
+
+            #skills{
+                // background-color: oldlace;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                #skills-container{
+                    color: grey;
+                    display: block;
+                    position: absolute;
+                    display: flex;
+                    justify-content:space-around;
+                    width:70vh;
+                    top: 5vh;
+                    left: 6.5vw;
+                    transform-origin: 0vw 0vw;
+                    transform: rotate(90deg);
+                    font-family: $fontCode;
+                    letter-spacing: .3vh;
+                    // background-color: red;
+                    h1{
+                        width: max-content;
+                    }
+                    #skills-webdev{
+                        
+                    }
+                    #skills-uiux{
+
+                    }
+                    #skills-appsdev{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
