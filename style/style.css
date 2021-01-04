@@ -96,6 +96,21 @@ body {
   font-size: 3vw;
 }
 
+#home #container-2 #top-nav .right .frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: end;
+  z-index: 100;
+}
+
+#home #container-2 #top-nav .right .frame .frame-nav {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #home #container-2 #content-2 {
   width: 100%;
   height: 100%;
@@ -267,6 +282,7 @@ body {
 }
 
 #home #container-2 #content-2 #skills {
+  background-color: transparent;
   width: 100%;
   height: 100%;
   position: relative;
@@ -296,5 +312,231 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+#about-me {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-me #about-container {
+  width: 90%;
+  height: 85%;
+}
+
+#about-me #about-container #about-container-content {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-me #about-container #about-container-content .title {
+  margin: 0 0 5vh 0;
+}
+
+#about-me #about-container #about-container-content #about-content {
+  background-color: black;
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Signika", sans-serif;
+  letter-spacing: .1vw;
+  line-height: 1.5em;
+}
+
+#about-me #about-container #about-container-content #about-content p {
+  margin: 4vh 0 4vh 0;
+}
+
+#skills {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#skills #skills-container {
+  width: 90%;
+  height: 85%;
+}
+
+#skills #skills-container #skills-container-content {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#skills #skills-container #skills-container-content .title {
+  margin: 0 0 5vh 0;
+}
+
+#skills #skills-container #skills-container-content #skills-content {
+  background-color: black;
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Signika", sans-serif;
+  letter-spacing: .1vw;
+  line-height: 1.5em;
+}
+
+#skills #skills-container #skills-container-content #skills-content p {
+  margin: 4vh 0 4vh 0;
+}
+
+#work {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#work #app {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#work #work-container {
+  width: 90%;
+  height: 85%;
+}
+
+#work #work-container .title {
+  width: 100%;
+}
+
+#work #work-container #work-bg {
+  top: 20;
+  position: fixed;
+  width: inherit;
+  height: inherit;
+  font-size: 8.5vw;
+  -webkit-text-stroke: 2px var(--color-deco);
+  text-stroke: 2px var(--color-deco);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  text-transform: uppercase;
+  z-index: -1;
+  text-align: center;
+}
+
+#work #work-container #work-bg .work-bg-title {
+  text-align: center;
+  font-size: 8.5vw;
+  letter-spacing: 2vw;
+  -webkit-text-stroke: 0.2vw rgba(93, 93, 93, 0.226);
+  color: transparent;
+  line-height: 1em;
+}
+
+#work #work-container .work-grid {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work #work-container .work-grid .grid-item {
+  margin: 0 0 4rem;
+  max-width: 300px;
+}
+
+#work #work-container .work-grid .grid-item .grid-item-img {
+  max-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+#work #work-container .work-grid .grid-item .grid-item-img-large {
+  pointer-events: nonde;
+  position: fixed;
+  opacity: 0;
+}
+
+#work #work-container .work-grid .grid-item .grid-item-caption .grid-item-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem;
+  line-height: 1;
+}
+
+#work #work-container .work-grid .grid-item .grid-item-caption .grid-item-text {
+  color: #727272;
+  font-size: 1rem;
+}
+
+.nav-menu {
+  color: grey;
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+  text-transform: lowercase;
+  font-family: "Source Code Pro", monospace;
+}
+
+.title {
+  color: cyan;
+  font-weight: 900;
+  font-size: 4vw;
+  font-family: "Quantico", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

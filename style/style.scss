@@ -87,6 +87,35 @@ body{
                 text-align: right;
                 font-size: 3vw;
                 // background-color: rebeccapurple;
+
+                .frame{
+                    width: 100%;
+                    height: 100%;
+                    // background-color: red;
+                    position: relative;
+                    text-align: end;
+                    z-index: 100;
+
+                    .frame-nav{
+                        padding: 0;
+                        margin: 0;
+                        // background-color: blue;
+                        width: 100%;
+                        height: 100%;
+
+                        .main-nav-open{
+                            // background-color: pink;
+                        }
+
+                        svg{
+                            // background-color: cyan;
+                        }
+
+                        .main-nav{
+                            // background-color: red;
+                        }
+                    }
+                }
             }
         }
 
@@ -238,7 +267,7 @@ body{
             }
 
             #skills{
-                // background-color: oldlace;
+                background-color: transparent;
                 width: 100%;
                 height: 100%;
                 position: relative;
@@ -274,4 +303,217 @@ body{
     }
 }
 
+#about-me{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    #about-container{
+        width: 90%;
+        height: 85%;
+        // background-color: rgb(29, 29, 29);
+
+        .nav-menu{
+
+        }
+
+        #about-container-content{
+            // background-color: blue;
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .title{
+                margin: 0 0 5vh 0;
+                
+            }
+
+            #about-content{
+                background-color: black;
+                width: 50%;
+                font-size: 1.5rem;
+                font-family: $fontSignika;
+                letter-spacing: .1vw;
+                line-height: 1.5em;
+                
+                p{
+                    margin: 4vh 0 4vh 0;
+                }
+            }
+        }        
+    }
+}
+
+#skills{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #skills-container{
+        width: 90%;
+        height: 85%;
+        // background-color: rgb(29, 29, 29);
+
+        .nav-menu{
+
+        }
+
+        #skills-container-content{
+            // background-color: blue;
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .title{
+                margin: 0 0 5vh 0;
+                
+            }
+
+            #skills-content{
+                background-color: black;
+                width: 50%;
+                font-size: 1.5rem;
+                font-family: $fontSignika;
+                letter-spacing: .1vw;
+                line-height: 1.5em;
+                
+                p{ 
+                    margin: 4vh 0 4vh 0;
+                }
+            }
+        }        
+    }
+}
+
+#work{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+    #app{
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        // background-color: red;
+    }
+    #work-container {
+        width: 90%;
+        height: 85%;
+        // background-color: grey;
+        .title{
+            // background-color: darkolivegreen;
+            width: 100%;
+        }
+        #work-bg{
+            top: 20;
+            position: fixed;
+            width: inherit;
+            height: inherit;
+            font-size: 8.5vw;
+            -webkit-text-stroke: 2px var(--color-deco);
+            text-stroke: 2px var(--color-deco);
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            color: transparent;
+            text-transform: uppercase;
+            z-index: -1;
+            text-align: center;
+            // background-color: darkgoldenrod;
+            .work-bg-title{
+                text-align: center;
+                font-size: 8.5vw;
+                letter-spacing: 2vw;
+                -webkit-text-stroke: .2vw rgba(93, 93, 93, 0.226);
+                color: transparent;
+                line-height: 1em;
+            }
+        }
+        .work-grid{
+            // background-color: darkcyan;
+            position: relative;
+            // max-width: 300px;
+            height:  100%;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .grid-item {
+                margin: 0 0 4rem;
+                max-width: 300px;
+                // background-color: red;
+
+                .grid-item-img{
+                    max-width: 100%;
+                    display: block;
+                    cursor: pointer;
+
+                }
+                .grid-item-img-large{
+                    pointer-events: nonde;
+                    position: fixed;
+                    opacity: 0;
+                }
+
+                .grid-item-caption{
+
+                    .grid-item-title{
+                        font-size: 2.5rem;
+                        font-weight: 400;
+                        margin: 1rem;
+                        line-height: 1;
+
+                    }
+    
+                    .grid-item-text{
+                        color: rgb(114, 114, 114);
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
+
+
+// Global Area
+.nav-menu{
+    color: grey;
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: lowercase;
+    font-family: $fontCode;
+
+}
+
+.title{
+    color: cyan;
+    font-weight: 900;
+    font-size: 4vw;
+    font-family: $fontQuantico;
+}

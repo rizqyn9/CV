@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Underwater Navigation | Codrops</title>
+		<meta name="description" content="A WebGL representation of a navigation that styles itself after the impression of being underwater.">
+		<meta name="author" content="Liam Egan for Codrops">
+		<link rel="stylesheet" href="https://use.typekit.net/phg5cnq.css">
+		<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+		<link rel="stylesheet" type="text/css" href="/menu.36e65361.css">
+		<!-- Libraries -->
+		<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+
+
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script src="/base.98fd6c19.js"></script><script src="/menu.36e65361.js"></script></head>
+	<body class="demo-1">
+		<main>
+			<div class="frame">
+				<div class="frame__nav">
+					<label class="main-nav-open nav-toggle" for="main-nav-toggle" tabindex="0" aria-label="Menu">
+						<svg aria-hidden="true" width="28px" height="20px" viewBox="0 0 28 20">
+							<rect x="0" y="2" width="28" height="2"></rect>
+							<rect x="0" y="10" width="24" height="2"></rect>
+							<rect x="0" y="18" width="28" height="2"></rect>
+						</svg>
+					</label>
+					<input type="checkbox" id="main-nav-toggle">
+					<nav class="main-nav">
+						<ul class="main-nav__fallback">
+							<li>
+								<a href="#observatory">HOME</a>
+							</li>
+							<li>
+								<a href="#research">ABOUT</a>
+							</li>
+							<li>
+								<a href="#events">SKILLS</a>
+							</li>
+							<li>
+								<a href="#members">SERVICES</a>
+							</li>
+							<li>
+								<a href="#contact">CONTACT</a>
+							</li>
+						</ul>
+						<label class="main-nav__close nav-toggle" for="main-nav-toggle" tabindex="0" aria-label="Close menu">
+							<svg aria-hidden="true" width="24" height="22px" viewBox="0 0 24 22">
+								<path d="M11 9.586L20.192.393l1.415 1.415L12.414 11l9.193 9.192-1.415 1.415L11 12.414l-9.192 9.193-1.415-1.415L9.586 11 .393 1.808 1.808.393 11 9.586z">
+							</path></svg>
+						</label>
+					</nav>
+				</div>
+			</div>
+		</main>
+		<script src="/main.fb6bbcaf.js"></script>
+	</body>
+</html>

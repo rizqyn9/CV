@@ -1,3 +1,5 @@
+import * as PIXI from 'pixi.js'
+
 var textWrapper = document.querySelector(".intro-title");
 textWrapper.innerHTML = textWrapper.textContent.replace(
     /([^\x00-\x80.*]|\W|\w)/g,
@@ -73,4 +75,5 @@ anime
         opacity: 0,
         ease: Expo.easeInOut
     });
+    
     
